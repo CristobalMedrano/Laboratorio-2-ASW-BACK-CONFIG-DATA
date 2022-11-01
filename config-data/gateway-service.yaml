@@ -28,7 +28,7 @@ spring:
         - id: ms-1-service
           uri: lb://ms-1-service
           predicates:
-            - Path=/ms1/**
+            - Path=/files/**
         - id: ms-2-service
           uri: lb://ms-2-service
           predicates:
