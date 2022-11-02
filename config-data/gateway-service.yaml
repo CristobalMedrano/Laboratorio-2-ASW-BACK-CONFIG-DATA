@@ -28,11 +28,11 @@ spring:
         - id: ms-1-service
           uri: lb://ms-1-service
           predicates:
-            - Path=/files/**
+            - Path=/clocklogs/**
         - id: ms-2-service
           uri: lb://ms-2-service
           predicates:
-            - Path=/clocklogs/**
+            - Path=/ms2/**
         - id: ms-3-service
           uri: lb://ms-3-service
           predicates:
