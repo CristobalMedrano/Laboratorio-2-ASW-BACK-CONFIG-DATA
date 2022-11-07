@@ -40,8 +40,8 @@ spring:
         - id: ms-4-service
           uri: lb://ms-4-service
           predicates:
-            - Path=/employees/**
+            - Path=/reports/**
         - id: ms-5-service
           uri: lb://ms-5-service
           predicates:
-            - Path=/reports/**
+            - Path=/employees/**
